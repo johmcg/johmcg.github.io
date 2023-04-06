@@ -5,7 +5,7 @@ fetch('https://api.github.com/users/johmcg/starred')
         for (const items in data) {
             let name = data[items].name;
             let webAddress = "https://github.com/johmcg/" + data[items].name;
-            let description = data[items].description;
+            let desc = data[items].description;
             let image = `https://raw.githubusercontent.com/johmcg/${name}/main/img/screenshot.png`;
 
             if (image === null){
@@ -15,7 +15,7 @@ fetch('https://api.github.com/users/johmcg/starred')
                       <img src="..." class="card-img-top" alt="..."> 
                       <div class="card-body"> 
                         <h5 class="card-title">${name}</h5> 
-                        <p class="card-text">${description}</p> 
+                        <p class="card-text">${desc}</p> 
                       </div> 
                       <ul class="list-group list-group-flush"> 
                         <li class="list-group-item"> 
@@ -33,7 +33,7 @@ fetch('https://api.github.com/users/johmcg/starred')
                       <img src="${image}" class="card-img-top" alt="..."> 
                       <div class="card-body"> 
                         <h5 class="card-title">${name}</h5> 
-                        <p class="card-text">${description}</p> 
+                        <p class="card-text">${desc}</p> 
                       </div> 
                       <ul class="list-group list-group-flush"> 
                         <li class="list-group-item"> 

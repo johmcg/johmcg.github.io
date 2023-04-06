@@ -20,6 +20,10 @@
       #section2{
         background: linear-gradient(to bottom, #8e2de2, #4a00e0, #1b1b1b);
       }
+
+      #section3{
+        background: linear-gradient(to bottom, #1b1b1b, #4a00e0, #8e2de2);
+      }
     </style>
 
 
@@ -27,11 +31,12 @@
     <script src="porfolio.js"></script>
 
   </head>
-
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <div class="container-fluid">
-      <img src="img/me.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+      <a class="nav-link" href="https://www.linkedin.com/in/john-mcgee-0224091b7">
+      <img src="img/me.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,7 +56,7 @@
     </div>
   </nav>
 
-  <body data-bs-spy="scroll" data-bs-target=".navbar">
+
 
   <div id="section1" class="container-flex bg-success text-white" style="padding:20% 5%;">
     <h1>Hi, nice to meet you!</h1>
@@ -61,18 +66,20 @@
   <div id="section2" class="container-flex text-white" style="padding:20% 5%;">
     <h1>Portfolio</h1>
       <div class="container">
-          <div id="myCards" class="row">
+          <div id="myCards" class="row text-dark">
       </div>
     </div>
       </div>
 
   <div id="section3" class="container-flex bg-secondary text-white" style="padding:20% 5%;">
     <h1>Contact Me</h1>
-    <!--Info Form-->
- </div>
-
-
-
+  <div class="container">
+    <div class="row">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfy22eItTlyZRzMOqZvjpG5Mqgw7PKEWx6_xgYn1vYJy0QH3Q/viewform?embedded=true" width="640" height="812" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  </div>
   </body>
 
 </html>
