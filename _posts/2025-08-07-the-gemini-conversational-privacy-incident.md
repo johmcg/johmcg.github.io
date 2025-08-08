@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Gemini Conversational Privacy Incident"
+author: John McGee
 date: 2025-08-07 10:30:00 -0400
 categories: [ai, privacy, data, gemini, security]
 ---
