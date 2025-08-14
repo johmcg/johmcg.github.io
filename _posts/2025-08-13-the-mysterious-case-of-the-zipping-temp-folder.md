@@ -10,12 +10,12 @@ One of the most interesting and strange helpdesk calls I've received recently ha
 The user's issue was as follows: when they created a zip file from a single text file and then deleted the original, everything worked as expected. The file was gone, and the zip archive remained. However, things got strange when they tried to perform a nested operation.
 
 Here is the normal process, which works as expected:
-![Normal Deletion after Zipping](1zip.gif)
+![Normal Deletion after Zipping](/assets/1zip.gif)
 
 This time, the user zipped the original text file and then zipped that archive again. When they tried to delete the original text file a second time, the process broke down. The system now required administrative permissions to delete the file, something that hadn't happened during the first attempt.
 
 This is the strange behavior that requires administrative permissions and reveals the temporary folder:
-![Double Zip and Permission Issues](2zips2times.gif)
+![Double Zip and Permission Issues](/assets/2zips2times.gif)
 
 Curiosity led me to investigate further. Before attempting to delete the file, I navigated up one directory level. This is when I discovered something truly alarming: we were no longer in their original folder. Instead, we had been operating inside a temporary folder on the Windows system.
 
