@@ -1,0 +1,14 @@
+name: Blog Content Check
+on: [push]
+
+jobs:
+  check-markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout CodeS
+        uses: actions/checkout@v4
+
+      - name: Check Markdown Formatting
+        uses: DavidAnson/markdownlint-cli2-action@v1
+        with:
+          globs: "**/*.md"
