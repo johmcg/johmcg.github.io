@@ -5,7 +5,7 @@ jobs:
   check-markdown:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout CodeS
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Check Markdown Formatting
