@@ -12,9 +12,9 @@ I implemented a **CI (Continuous Integration) pipeline** using **GitHub Actions*
 
 ### The Challenge: "Linter Whack-a-Mole"
 
-Initially, the linter flagged 50+ errors (specifically `MD013` for line length and `MD030` for list spacing). 
+Initially, the linter flagged 50+ errors (specifically `MD013` for line length and `MD030` for list spacing).
 ![Blog Errors](/assets/blogtoolong.png)
-I faced a classic DevOps dilemma: refactor years of existing content or tune the infrastructure to meet the project's needs. 
+I faced a classic DevOps dilemma: refactor years of existing content or tune the infrastructure to meet the project's needs.
 
 I chose to create a custom `.markdownlint-cli2.jsonc` configuration to balance strict standards with the reality of my existing blog format:
 
